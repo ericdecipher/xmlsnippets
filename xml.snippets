@@ -153,19 +153,6 @@ snippet dblock
 	
 	<exec when="finished">if hasMarker('lockme'):  db.add(source)</exec>
 
-snippet vmarkers
-	<text label="vmarkers" size="40" optional="0" where="notdp">
-	  <title>vmarkers</title>
-	<virtual>
-	if 'qualified' in markers:
-	  oldmarkers = markers[:]
-	  if list in [ '2' ]:
-	    data.val = ",".join(oldmarkers)
-	  else:
-	    data.val = ",".join(oldmarkers)
-	</virtual>
-	</text>
-
 snippet vrandom
 	<number label='vRandom' size='1' title='Order of elements'>
 	  <virtual>assignRandomOrder('${1}', 'children')</virtual>
@@ -189,8 +176,6 @@ snippet oo
 	 openOptional="1"
 snippet colleg
 	 colLegendRows="${1:}"
-snippet total
-	 uses="autosum.1" autosum:preText="$" colLegend="bottom" amount="100"
 snippet ppt
 	 style="prePostText" cs:${1:postText}="${res.${2:foo}}"
 snippet style
