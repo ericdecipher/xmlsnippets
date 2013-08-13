@@ -379,7 +379,7 @@ snippet states
 # AQ STYLES
 #
 
-snippet atm
+snippet atm1d
 	<uses>atm1d.${1:1}</uses>
 	${2}
 snippet atmtable
@@ -401,7 +401,7 @@ snippet cardsort
 snippet clickabletext
 	<uses>clickabletext.${1:1}</uses>
 	${2}
-snippet clicktoggle
+snippet clickabletexttoggle
 	<uses>clickabletexttoggle.${1:1}</uses>
 	${2}
 snippet fancyboxes
@@ -415,6 +415,44 @@ snippet fir
 snippet greyout
 	<uses>greyout.${1:1}</uses>
 	${2}
+snippet heatclick
+	<uses>heatclick.${1:1}</uses>
+	<heatclick:image>${2}</heatclick:image>
+	<heatclick:bugimage>${3}</heatclick:bugimage>
+	<heatclick:continue_text>${4:Continue}</heatclick:continue_text>
+	<heatclick:reset_text>${5:Reset}</heatclick:reset_text>
+	<heatclick:optout_text>${6}</heatclick:optout_text>
+	<heatclick:width>${7:700}</heatclick:width>
+	<heatclick:height>${8:500}</heatclick:height>
+	<heatclick:bugwidth>${9:10}</heatclick:bugwidth>
+	<heatclick:bugheight>${10:10}</heatclick:bugheight>
+	<heatclick:max>${11:999}</heatclick:max>
+	<heatclick:min>${12:0}</heatclick:min>
+	${13}
+snippet hotspot
+	<uses>hotspot.${1:1}</uses>
+	<hotspot:image>${2}</hotspot:image>
+	<hotspot:imageWidth>${3}</hotspot:imageWidth>
+	<hotspot:imageHeight>${4}</hotspot:imageHeight>
+	${5}
+snippet hotspotrow
+	<hotspot:shape>${1:rect}</hotspot:shape>
+	<hotspot:coordinates>${2}</hotspot:coordinates>
+	<hotspot:fillColor>${3:#76dd71}</hotspot:fillColor>
+	${4}
+snippet hotspottoggle
+	<uses>hotspottoggle.${1:1}</uses>
+	<hotspottoggle:image>${2}</hotspottoggle:image>
+	<hotspottoggle:imageWidth>${3}</hotspottoggle:imageWidth>
+	<hotspottoggle:imageHeight>${4}</hotspottoggle:imageHeight>
+	<hotspottoggle:requiredAnswers>${5:1}</hotspottoggle:requiredAnswers>
+	${6}
+
+snippet hotspottogglerow
+	<hotspottoggle:shape>${1:rect}</hotspottoggle:shape>
+	<hotspottoggle:coordinates>${2}</hotspottoggle:coordinates>
+	<hotspottoggle:fillColor>${3:#76dd71}</hotspottoggle:fillColor>
+	${4}
 snippet leftright
 	<uses>leftright.${1:1}</uses>
 	${2}
@@ -423,7 +461,7 @@ snippet multicol
 	<multicol:flow>${2:vertical}</multicol:flow>
 	<multicol:count>${3:2}</multicol:count>
 	${4}
-snippet onerow
+snippet onerowatatime
 	<uses>onerowatatime.${1:1}</uses>
 	${2}
 snippet ranksort
@@ -445,13 +483,13 @@ snippet scroll
 	<uses>scroll.${1:1}</uses>
 	<scroll:height>${2:200px}</scroll:height>
 	${3}
-snippet sep
+snippet separator
 	<uses>separator.${1:1}</uses>
 	<separator:elements>${2}</separator:elements>
 	<separator:space>${3}</separator:space>
 	<separator:color>${4}</separator:color>
 	${5}
-snippet slider
+snippet slidernumber
 	<uses>slidernumber.${1:1}</uses>
 	<slidernumber:sliderPosition>${2:Off Scale}</slidernumber:sliderPosition>
 	<slidernumber:step>${3:1}</slidernumber:step>
@@ -467,7 +505,7 @@ snippet slider
 	<slidernumber:OO_Text>${13}</slidernumber:OO_Text>
 	<slidernumber:offScaleText>${14}</slidernumber:offScaleText>
 	${15}
-snippet star
+snippet starrating
 	<uses>starrating.${1:1}</uses>
 	<starrating:tooltips>${2:1}</starrating:tooltips>
 	${3}
