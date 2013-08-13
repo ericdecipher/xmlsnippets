@@ -380,38 +380,94 @@ snippet states
 #
 
 snippet atm
-	uses="atm1d.${1:1}" atm1d:inputs="${2:0}" atm1d:one_col="${3:0}" atm1d:btns_container_css="${4}" atm1d:btn_css="${5}" atm1d:btn_selected_css="${6}" atm1d:btn_disabled_css="${7}"
+	<uses>atm1d.${1:1}</uses>
+	${2}
 snippet atmtable
-	uses="atmtable.${1:1}" atmtable:row_dividers="${2:0}" atmtable:inputs="${3:0}" atmtable:row_dividers_css="${4}" atmtable:table_css="${5}" atmtable:btn_css="${6}" atmtable:btn_selected_css="${7} atmtable:btn_selected_css="${8}" atmtable:row_legend_css="${9}" atmtable:col_legend_css="${11}" atmtable:col_legend_text="${12}"
+	<uses>atmtable.${1:1}</uses>
+	${2}
 snippet autosum
-	uses="autosum.${1:1}" autosum:preText="${2} autosum:postText="${3}" autosum:sumPreText="${4:Total:}" autosum:color="${5:red}" autosum:prefill="${6}" autosum:showRemaining="${7:0}" autosum:legendPosition="${8:bottom}" autosum:disabled="${9:0}" autosum:amount="${10}"
+	<uses>autosum.${1:1}</uses>
+	<autosum:preText>${2}</autosum:preText>
+	<autosum:postText>${3}</autosum:postText>
+	<autosum:sumPreText>${4:Total:}</autosum:sumPreText>
+	<autosum:amount>${5}</autosum:amount>
+	${6}
 snippet cardsort
-	uses="cardsort.${1:1}" cardsort:themeFile="${1}" cardsort:cardCSS="${2}" cardsort:cardDisableCSS="${3}" cardsort:cardHoverCSS="${4}" cardsort:cardSelectCSS="${5}" cardsort:contentsCardCSS="${6}" cardsort:bucketCSS="${7}" cardsort:bucketDisableCSS="${8}" cardsort:bucketHoverCSS="${9}" cardsort:bucketSelectCSS="${10}" cardsort:bucketCountCSS="${11}" cardsort:bucketCountDisableCSS="${12}" cardsort:bucketCountHoverCSS="${13}" cardsort:iconButtonCSS="${14}" cardsort:iconButtonDisableCSS="${15}" cardsort:iconButtonHoverCSS="${16}" cardsort:progressCSS="${17}" cardsort:completionCSS="${18}" cardsort:buttonPreviousHTML="${19:&lt;i class='fa-icon-chevron-left'&gt;&lt;/i&gt; Prev}" cardsort:buttonNextHTML="${20:Next &lt;i class='fa-icon-chevron-right'&gt;&lt;/i&gt;}" cardsort:completionHTML="${21:&lt;b&gt;All done!&lt;/b&gt; &lt;br/&gt;&lt;i&gt;Click the &quot;Continue&quot; button to proceed.&lt;/i&gt;}" cardsort:wrapBuckets="${22:1}" cardsort:bucketsPerRow="${23:0}" cardsort:displayNavigation="${24:1}" cardsort:displayCounter="${25:1}" cardsort:displayProgress="${26:1}" cardsort:animationDuration="${27:500}"
+	<uses>cardsort.${1:1}</uses>
+	<cardsort:buttonPreviousHTML>${2:<i class='fa-icon-chevron-left'></i> Prev}</cardsort:buttonPreviousHTML>
+	<cardsort:buttonNextHTML>${3:Next <i class='fa-icon-chevron-right'></i>}</cardsort:buttonNextHTML> 
+	<cardsort:completionHTML>${4:<b>All done!</b><br/><i>Click the "Continue" button to proceed.</i>}</cardsort:completionHTML>
+	${5}
 snippet clickabletext
-	uses="clickabletext.${1:1}" clickabletext:clickabletext_container_css="${2}" clickabletext:clickabletext_css="${3}" clickabletext:clickabletext_hover_css="${4}" clickabletext:clickabletext_selected_css="${5}" clickabletext:alwayson_css="${6}"
+	<uses>clickabletext.${1:1}</uses>
+	${2}
 snippet clicktoggle
-	uses="clickabletexttoggle.${1:1}" clickabletexttoggle:requiredAnswers="${2:1}" clickabletexttoggle:clickabletexttoggle_container_css="${3}" clickabletexttoggle:clickabletexttoggle_css="${4}"
+	<uses>clickabletexttoggle.${1:1}</uses>
+	${2}
 snippet fancyboxes
-	uses="fancyboxes.${1:1}" fancyboxes:input="${2:0}" fancyboxes:table_css="${3}" fancyboxes:btn_css="${4}" fancyboxes:btn_tab_css="${5}" fancyboxes:btn_tab_icon_css="${6}" fancyboxes:btn_selected_css="${7}" fancyboxes:btn_selected_tab_css="${8}" fancyboxes:btn_selected_tab_icon_css="${9}" fancyboxes:btn_remove_css="${10}" fancyboxes:btn_remove_tab_css="${11}" fancyboxes:btn_remove_tab_icon_css="${13}" fancyboxes:btn_disabled_css="${14}" fancyboxes:btn_disabled_tab_css="${15}" fancyboxes:btn_disabled_tab_icon_css="${16}" fancyboxes:row_legend_css="${17}" fancyboxes:col_legend_css="${18}"
+	<uses>fancyboxes.${1:1}</uses>
+	${2}
 snippet fir
-	uses="fir.${1:1}" fir:image_css="${2}" fir:image_radio_css="${3}" fir:image_checkbox_css="${4}" fir:off="${5:0}"
+	<uses>fir.${1:1}</uses>
+	<fir:image_radio_css>${2}</fir:image_radio_css>
+	<fir:image_checkbox_css>${3}</fir:image_checkbox_css>
+	${4}
 snippet greyout
-	uses="greyout.${1:1}"
+	<uses>greyout.${1:1}</uses>
+	${2}
 snippet leftright
-	uses="leftright.${1:1}"
+	<uses>leftright.${1:1}</uses>
+	${2}
 snippet multicol
-	uses="multicol.${1:1}" multicol:flow="${2:vertical}" multicol:count="${3:2}" multicol:start="${4}"
+	<uses>multicol.${1:1}</uses>
+	<multicol:flow>${2:vertical}</multicol:flow>
+	<multicol:count>${3:2}</multicol:count>
+	${4}
 snippet onerow
-	uses="onerowatatime.${1:1}"
+	<uses>onerowatatime.${1:1}</uses>
+	${2}
 snippet ranksort
-	uses="ranksort.${1:1}" ranksort:btnOpenEdit="${1:edit}" ranksort:showBucketText="${2:1}" ranksort:showBucketNumber="${3:1}" ranksort:ranksortContainerCSS="${4}" ranksort:cardsContainerCSS="${5}" ranksort:cardCSS="${6}" ranksort:cardHoverCSS="${7}" ranksort:cardDroppedCSS="${8}" ranksort:cardStateDisabledCSS="${9}" ranksort:cardDroppedStateDisabledCSS="${10}" ranksort:bucketsCSS="${11}" ranksort:bucketsContainerCSS="${12}" ranksort:numbersContainerCSS="${13}" ranksort:bucketCSS="${14}" ranksort:bucketTextCSS="${15}" ranksort:bucketNumberCSS="${16}" ranksort:bucketNumberTextCSS="${17}" ranksort:noanswersContainerCSS="${18}" ranksort:noanswerCSS="${19}" ranksort:noanswerHoverCSS="${20}" ranksort:noanswerSelectedCSS="${21}" ranksort:uiDraggableHelperCSS="${22}" ranksort:uiSortablePlaceholderCSS="${23}" ranksort:uiSortableHelperCSS="${24}" ranksort:uiDroppableActiveCSS="${25}" ranksort:uiDroppableHoverCSS="${26}" ranksort:iconAddCSS="${27}" ranksort:iconRemoveCSS="${28}" ranksort:iconRankCSS="${29}" ranksort:mobile_ranksortContainerCSS="${30}" ranksort:mobile_cardsContainerCSS="${31}" ranksort:mobile_cardCSS="${32}" ranksort:mobile_cardDroppedCSS="${33}" ranksort:mobile_cardDupeCSS="${34}" ranksort:mobile_noanswersContainerCSS="${35}" ranksort:mobile_noanswerCSS="${36}" ranksort:mobile_noanswerSelectedCSS="${37}" ranksort:mobile_iconRankCSS="${38}"
+	<uses>ranksort.${1:1}</uses>
+	<ranksort:showBucketText>${2:1}</ranksort:showBucketText>
+	<ranksort:showBucketNumber>${3:1}</ranksort:showBucketNumber>
+	${4}
 snippet ratingscale
-	uses="ratingscale.${1:1}" ratingscale:bubble_size="${2:38}" ratingscale:bubble_img="${3:/survey/lib/steam/ratingscale/v1/ratingscale-both.png}" ratingscale:bubble_css="${4}" ratingscale:bubble_starting_css="${5:background-position: 0 0;}" ratingscale:bubble_answered_css="${6:background-position: 100% 0;}" ratingscale:bubble_disabled_css="${7}" ratingscale:hide_radio="${8:0}" ratingscale:radio_img_size="${9:0}" ratingscale:radio_img="${10:/survey/lib/steam/ratingscale/v1/ratingscale-empty.png}" ratingscale:radio_selected_img="${11}" ratingscale:radio_css="${12}" ratingscale:radio_selected_css="${13}" ratingscale:radio_img_transition="${14:0}"
+	<uses>ratingscale.${1:1}</uses>
+	<ratingscale:bubble_size>${2:38}</ratingscale:bubble_size>
+	<ratingscale:bubble_img>${3:/survey/lib/steam/ratingscale/v1/ratingscale-both.png}</ratingscale:bubble_img>
+	<ratingscale:hide_radio>${4:0}</ratingscale:hide_radio>
+	<ratingscale:radio_img_size>${5:0}</ratingscale:radio_img_size>
+	<ratingscale:radio_img>${6:/survey/lib/steam/ratingscale/v1/ratingscale-empty.png}</ratingscale:radio_img>
+	<ratingscale:radio_selected_img>${7}</ratingscale:radio_selected_img>
+	<ratingscale:radio_img_transition>${8:0}</ratingscale:radio_img_transition>
+	${9}
 snippet scroll
-	uses="scroll.${1:1}" scroll:height="${2:200px}"
+	<uses>scroll.${1:1}</uses>
+	<scroll:height>${2:200px}</scroll:height>
+	${3}
 snippet sep
-	uses="separator.${1:1}" separator:elements="${2}" separator:space="${3}" separator:color="${4}"
+	<uses>separator.${1:1}</uses>
+	<separator:elements>${2}</separator:elements>
+	<separator:space>${3}</separator:space>
+	<separator:color>${4}</separator:color>
+	${5}
 snippet slider
-	uses="slidernumber.${1:1}" slidernumber:sliderPosition="${2:Off Scale}" slidernumber:step="${3:1}" slidernumber:legendPosition="${4:Below Slider}" slidernumber:leftLegend="${5}" slidernumber:midLegend="${6}" slidernumber:rightLegend="${7}" slidernumber:showValue="${8:Above Slider}" slidernumber:preText="${9}" slidernumber:postText="${10}" slidernumber:editable="${11:1}" slidernumber:showRange="${12:1}" slidernumber:sliderWidth="${13:75%}" slidernumber:OO_Text ="${14}" slidernumber:offScaleAdjustment="${15:-30px}" slidernumber:offScaleText="${16}" slidernumber:slidernumber_desktop_margin_css="${17:&lt;i class='fa-icon-arrow-right'&gt;&lt;/i&gt;}" slidernumber:slidernumber_mobile_margin_css="${18}" slidernumber:input_css="${19}" slidernumber:handle_css="${20}" slidernumber:handle_offscale_css="${21}" slidernumber:handle_focus_css="${22}" slidernumber:handle_hover_css="${23}" slidernumber:handle_active_css="${24}" slidernumber:track_css="${25}" slidernumber:track_hover_css="${26}" slidernumber:track_active_css="${27}" slidernumber:track_range_css="${28}" 
+	<uses>slidernumber.${1:1}</uses>
+	<slidernumber:sliderPosition>${2:Off Scale}</slidernumber:sliderPosition>
+	<slidernumber:step>${3:1}</slidernumber:step>
+	<slidernumber:legendPosition>${4:Below Slider}</slidernumber:legendPosition>
+	<slidernumber:leftLegend>${5}</slidernumber:leftLegend>
+	<slidernumber:midLegend>${6}</slidernumber:midLegend>
+	<slidernumber:rightLegend>${7}</slidernumber:rightLegend>
+	<slidernumber:showValue>${8:Above Slider}</slidernumber:showValue>
+	<slidernumber:preText>${9}</slidernumber:preText>
+	<slidernumber:postText>${10}</slidernumber:postText>
+	<slidernumber:editable>${11:1}</slidernumber:editable>
+	<slidernumber:showRange>${12:1}</slidernumber:showRange>
+	<slidernumber:OO_Text>${13}</slidernumber:OO_Text>
+	<slidernumber:offScaleText>${14}</slidernumber:offScaleText>
+	${15}
 snippet star
-	uses="starrating.${1:1}" starrating:tooltips="${2:1}" starrating:tooltips_skin="${3:light}" starrating:tooltips_css="${4}" starrating:star_char="${5:&#xf006;}" starrating:star_selected_char="${6:&#xf005;}" starrating:star_css="${7}" starrating:star_selected_css="${8}"	
+	<uses>starrating.${1:1}</uses>
+	<starrating:tooltips>${2:1}</starrating:tooltips>
+	${3}
