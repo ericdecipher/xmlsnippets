@@ -380,132 +380,133 @@ snippet states
 #
 
 snippet atm1d
-	<uses>atm1d.${1:1}</uses>
+	  <uses>atm1d.${1:1}</uses>
 	${2}
 snippet atmtable
-	<uses>atmtable.${1:1}</uses>
+	  <uses>atmtable.${1:1}</uses>
 	${2}
 snippet autosum
-	<uses>autosum.${1:1}</uses>
-	<autosum:preText>${2}</autosum:preText>
-	<autosum:postText>${3}</autosum:postText>
-	<autosum:sumPreText>${4:Total:}</autosum:sumPreText>
-	<autosum:amount>${5}</autosum:amount>
+	  <uses>autosum.${1:1}</uses>
+	  <autosum:preText>${2}</autosum:preText>
+	  <autosum:postText>${3}</autosum:postText>
+	  <autosum:sumPreText>${4:Total:}</autosum:sumPreText>
+	  <autosum:amount>${5}</autosum:amount>
 	${6}
 snippet cardsort
-	<uses>cardsort.${1:1}</uses>
-	<cardsort:buttonPreviousHTML>${2:<i class='fa-icon-chevron-left'></i> Prev}</cardsort:buttonPreviousHTML>
-	<cardsort:buttonNextHTML>${3:Next <i class='fa-icon-chevron-right'></i>}</cardsort:buttonNextHTML> 
-	<cardsort:completionHTML>${4:<b>All done!</b><br/><i>Click the "Continue" button to proceed.</i>}</cardsort:completionHTML>
+	  <uses>cardsort.${1:1}</uses>
+	  <cardsort:buttonPreviousHTML>${2:<i class='fa-icon-chevron-left'></i> Prev}</cardsort:buttonPreviousHTML>
+	  <cardsort:buttonNextHTML>${3:Next <i class='fa-icon-chevron-right'></i>}</cardsort:buttonNextHTML> 
+	  <cardsort:completionHTML>${4:<b>All done!</b><br/><i>Click the "Continue" button to proceed.</i>}</cardsort:completionHTML>
 	${5}
 snippet clickabletext
-	<uses>clickabletext.${1:1}</uses>
+	  <uses>clickabletext.${1:1}</uses>
 	${2}
 snippet clickabletexttoggle
-	<uses>clickabletexttoggle.${1:1}</uses>
-	${2}
+	  <uses>clickabletexttoggle.${1:1}</uses>
+	  <clickabletexttoggle:requiredAnswers>${2:1}</clickabletexttoggle:requiredAnswers>
+	${3}
 snippet fancyboxes
-	<uses>fancyboxes.${1:1}</uses>
+	  <uses>fancyboxes.${1:1}</uses>
 	${2}
 snippet fir
-	<uses>fir.${1:1}</uses>
-	<fir:image_radio_css>${2}</fir:image_radio_css>
-	<fir:image_checkbox_css>${3}</fir:image_checkbox_css>
+	  <uses>fir.${1:1}</uses>
+	  <fir:image_radio_css>${2}</fir:image_radio_css>
+	  <fir:image_checkbox_css>${3}</fir:image_checkbox_css>
 	${4}
 snippet greyout
-	<uses>greyout.${1:1}</uses>
+	  <uses>greyout.${1:1}</uses>
 	${2}
 snippet heatclick
-	<uses>heatclick.${1:1}</uses>
-	<heatclick:image>${2}</heatclick:image>
-	<heatclick:bugimage>${3}</heatclick:bugimage>
-	<heatclick:continue_text>${4:Continue}</heatclick:continue_text>
-	<heatclick:reset_text>${5:Reset}</heatclick:reset_text>
-	<heatclick:optout_text>${6}</heatclick:optout_text>
-	<heatclick:width>${7:700}</heatclick:width>
-	<heatclick:height>${8:500}</heatclick:height>
-	<heatclick:bugwidth>${9:10}</heatclick:bugwidth>
-	<heatclick:bugheight>${10:10}</heatclick:bugheight>
-	<heatclick:max>${11:999}</heatclick:max>
-	<heatclick:min>${12:0}</heatclick:min>
+	  <uses>heatclick.${1:1}</uses>
+	  <heatclick:image>${2}</heatclick:image>
+	  <heatclick:bugimage>${3}</heatclick:bugimage>
+	  <heatclick:continue_text>${4:Continue}</heatclick:continue_text>
+	  <heatclick:reset_text>${5:Reset}</heatclick:reset_text>
+	  <heatclick:optout_text>${6}</heatclick:optout_text>
+	  <heatclick:width>${7:700}</heatclick:width>
+	  <heatclick:height>${8:500}</heatclick:height>
+	  <heatclick:bugwidth>${9:10}</heatclick:bugwidth>
+	  <heatclick:bugheight>${10:10}</heatclick:bugheight>
+	  <heatclick:max>${11:999}</heatclick:max>
+	  <heatclick:min>${12:0}</heatclick:min>
 	${13}
 snippet hotspot
-	<uses>hotspot.${1:1}</uses>
-	<hotspot:image>${2}</hotspot:image>
-	<hotspot:imageWidth>${3}</hotspot:imageWidth>
-	<hotspot:imageHeight>${4}</hotspot:imageHeight>
+	  <uses>hotspot.${1:1}</uses>
+	  <hotspot:image>${2}</hotspot:image>
+	  <hotspot:imageWidth>${3}</hotspot:imageWidth>
+	  <hotspot:imageHeight>${4}</hotspot:imageHeight>
 	${5}
 snippet hotspotrow
-	<hotspot:shape>${1:rect}</hotspot:shape>
-	<hotspot:coordinates>${2}</hotspot:coordinates>
-	<hotspot:fillColor>${3:#76dd71}</hotspot:fillColor>
+	  <hotspot:shape>${1:rect}</hotspot:shape>
+	  <hotspot:coordinates>${2}</hotspot:coordinates>
+	  <hotspot:fillColor>${3:#76dd71}</hotspot:fillColor>
 	${4}
 snippet hotspottoggle
-	<uses>hotspottoggle.${1:1}</uses>
-	<hotspottoggle:image>${2}</hotspottoggle:image>
-	<hotspottoggle:imageWidth>${3}</hotspottoggle:imageWidth>
-	<hotspottoggle:imageHeight>${4}</hotspottoggle:imageHeight>
-	<hotspottoggle:requiredAnswers>${5:1}</hotspottoggle:requiredAnswers>
+	  <uses>hotspottoggle.${1:1}</uses>
+	  <hotspottoggle:image>${2}</hotspottoggle:image>
+	  <hotspottoggle:imageWidth>${3}</hotspottoggle:imageWidth>
+	  <hotspottoggle:imageHeight>${4}</hotspottoggle:imageHeight>
+	  <hotspottoggle:requiredAnswers>${5:1}</hotspottoggle:requiredAnswers>
 	${6}
 
 snippet hotspottogglerow
-	<hotspottoggle:shape>${1:rect}</hotspottoggle:shape>
-	<hotspottoggle:coordinates>${2}</hotspottoggle:coordinates>
-	<hotspottoggle:fillColor>${3:#76dd71}</hotspottoggle:fillColor>
+	  <hotspottoggle:shape>${1:rect}</hotspottoggle:shape>
+	  <hotspottoggle:coordinates>${2}</hotspottoggle:coordinates>
+	  <hotspottoggle:fillColor>${3:#76dd71}</hotspottoggle:fillColor>
 	${4}
 snippet leftright
-	<uses>leftright.${1:1}</uses>
+	  <uses>leftright.${1:1}</uses>
 	${2}
 snippet multicol
-	<uses>multicol.${1:1}</uses>
-	<multicol:flow>${2:vertical}</multicol:flow>
-	<multicol:count>${3:2}</multicol:count>
+	  <uses>multicol.${1:1}</uses>
+	  <multicol:flow>${2:vertical}</multicol:flow>
+	  <multicol:count>${3:2}</multicol:count>
 	${4}
 snippet onerowatatime
-	<uses>onerowatatime.${1:1}</uses>
+	  <uses>onerowatatime.${1:1}</uses>
 	${2}
 snippet ranksort
-	<uses>ranksort.${1:1}</uses>
-	<ranksort:showBucketText>${2:1}</ranksort:showBucketText>
-	<ranksort:showBucketNumber>${3:1}</ranksort:showBucketNumber>
+	  <uses>ranksort.${1:1}</uses>
+	  <ranksort:showBucketText>${2:1}</ranksort:showBucketText>
+	  <ranksort:showBucketNumber>${3:1}</ranksort:showBucketNumber>
 	${4}
 snippet ratingscale
-	<uses>ratingscale.${1:1}</uses>
-	<ratingscale:bubble_size>${2:38}</ratingscale:bubble_size>
-	<ratingscale:bubble_img>${3:/survey/lib/steam/ratingscale/v1/ratingscale-both.png}</ratingscale:bubble_img>
-	<ratingscale:hide_radio>${4:0}</ratingscale:hide_radio>
-	<ratingscale:radio_img_size>${5:0}</ratingscale:radio_img_size>
-	<ratingscale:radio_img>${6:/survey/lib/steam/ratingscale/v1/ratingscale-empty.png}</ratingscale:radio_img>
-	<ratingscale:radio_selected_img>${7}</ratingscale:radio_selected_img>
-	<ratingscale:radio_img_transition>${8:0}</ratingscale:radio_img_transition>
+	  <uses>ratingscale.${1:1}</uses>
+	  <ratingscale:bubble_size>${2:38}</ratingscale:bubble_size>
+	  <ratingscale:bubble_img>${3:/survey/lib/steam/ratingscale/v1/ratingscale-both.png}</ratingscale:bubble_img>
+	  <ratingscale:hide_radio>${4:0}</ratingscale:hide_radio>
+	  <ratingscale:radio_img_size>${5:0}</ratingscale:radio_img_size>
+	  <ratingscale:radio_img>${6:/survey/lib/steam/ratingscale/v1/ratingscale-empty.png}</ratingscale:radio_img>
+	  <ratingscale:radio_selected_img>${7}</ratingscale:radio_selected_img>
+	  <ratingscale:radio_img_transition>${8:0}</ratingscale:radio_img_transition>
 	${9}
 snippet scroll
-	<uses>scroll.${1:1}</uses>
-	<scroll:height>${2:200px}</scroll:height>
+	  <uses>scroll.${1:1}</uses>
+	  <scroll:height>${2:200px}</scroll:height>
 	${3}
 snippet separator
-	<uses>separator.${1:1}</uses>
-	<separator:elements>${2}</separator:elements>
-	<separator:space>${3}</separator:space>
-	<separator:color>${4}</separator:color>
+	  <uses>separator.${1:1}</uses>
+	  <separator:elements>${2}</separator:elements>
+	  <separator:space>${3}</separator:space>
+	  <separator:color>${4}</separator:color>
 	${5}
 snippet slidernumber
-	<uses>slidernumber.${1:1}</uses>
-	<slidernumber:sliderPosition>${2:Off Scale}</slidernumber:sliderPosition>
-	<slidernumber:step>${3:1}</slidernumber:step>
-	<slidernumber:legendPosition>${4:Below Slider}</slidernumber:legendPosition>
-	<slidernumber:leftLegend>${5}</slidernumber:leftLegend>
-	<slidernumber:midLegend>${6}</slidernumber:midLegend>
-	<slidernumber:rightLegend>${7}</slidernumber:rightLegend>
-	<slidernumber:showValue>${8:Above Slider}</slidernumber:showValue>
-	<slidernumber:preText>${9}</slidernumber:preText>
-	<slidernumber:postText>${10}</slidernumber:postText>
-	<slidernumber:editable>${11:1}</slidernumber:editable>
-	<slidernumber:showRange>${12:1}</slidernumber:showRange>
-	<slidernumber:OO_Text>${13}</slidernumber:OO_Text>
-	<slidernumber:offScaleText>${14}</slidernumber:offScaleText>
+	  <uses>slidernumber.${1:1}</uses>
+	  <slidernumber:sliderPosition>${2:Off Scale}</slidernumber:sliderPosition>
+	  <slidernumber:step>${3:1}</slidernumber:step>
+	  <slidernumber:legendPosition>${4:Below Slider}</slidernumber:legendPosition>
+	  <slidernumber:leftLegend>${5}</slidernumber:leftLegend>
+	  <slidernumber:midLegend>${6}</slidernumber:midLegend>
+	  <slidernumber:rightLegend>${7}</slidernumber:rightLegend>
+	  <slidernumber:showValue>${8:Above Slider}</slidernumber:showValue>
+	  <slidernumber:preText>${9}</slidernumber:preText>
+	  <slidernumber:postText>${10}</slidernumber:postText>
+	  <slidernumber:editable>${11:1}</slidernumber:editable>
+	  <slidernumber:showRange>${12:1}</slidernumber:showRange>
+	  <slidernumber:OO_Text>${13}</slidernumber:OO_Text>
+	  <slidernumber:offScaleText>${14}</slidernumber:offScaleText>
 	${15}
 snippet starrating
-	<uses>starrating.${1:1}</uses>
-	<starrating:tooltips>${2:1}</starrating:tooltips>
+	  <uses>starrating.${1:1}</uses>
+	  <starrating:tooltips>${2:1}</starrating:tooltips>
 	${3}
